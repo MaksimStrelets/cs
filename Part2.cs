@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -96,9 +96,9 @@ namespace Lab1._2
                 result[x] = GetCharFromIndexTable(buffer[x]);
             }
 
-            if(paddingCount == 1)
+            if (paddingCount == 1)
                 result[blockCount * 4 - 1] = '=';
-            if(paddingCount == 2)
+            if (paddingCount == 2)
             {
                 result[blockCount * 4 - 1] = '=';
                 result[blockCount * 4 - 2] = '=';
@@ -109,9 +109,9 @@ namespace Lab1._2
         static void Main(string[] args)
         {
             byte[] data = new byte[0];
-            string path = @"E:\Igor\";
+            string path = @"";
             string file = @"pci.bz2";
-           //string file = @"ripka.bz2";
+            //string file = @"ripka.bz2";
             //string file = @"kat.txt.bz2";
 
 
@@ -128,7 +128,7 @@ namespace Lab1._2
                 sValue += value[i].ToString();
             }
             string nfilename = @"pciBase64bz.txt";
-            File.WriteAllText(path+ nfilename, sValue, Encoding.Default);
+            File.WriteAllText(path + nfilename, sValue, Encoding.Default);
             Console.WriteLine(path + nfilename);
         }
     }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace cslab1_1
             double entropy = 0;//entropy
             double fileinfo = 0.0;//info quantity
 
-            string path = @"E:\Igor\katBase64bz2.txt";
+            string path = @"katBase64bz2.txt";
 
             string text = "";
             double len = 0.0;
